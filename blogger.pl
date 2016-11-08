@@ -9,13 +9,14 @@ use Data::Dumper;
 use MIME::Base64;
 use File::Slurp;
 use File::Find::utf8;
+use FindBin qw($Bin);
 
 use Readonly;
 Readonly::Scalar my $CLIENT_ID
     => '431571614658-72jvnsoi4jeu8e5t3tt67jlodp7k58fn.apps.googleusercontent.com';
 Readonly::Scalar my $CLIENT_SEC => 'ezZHWiVYfS9vq3ON6IYzuKN6';
 Readonly::Scalar my $BLOG_ID    => '7678772071518232421';
-Readonly::Scalar my $HTML_PATH  => '_build/html/documentation';
+Readonly::Scalar my $HTML_PATH  => "$Bin/_build/html/documentation";
 
 use utf8;
 binmode(STDOUT,':utf8');
