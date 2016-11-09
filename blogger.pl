@@ -10,6 +10,8 @@ use MIME::Base64;
 use File::Slurp;
 use File::Find::utf8;
 use FindBin qw($Bin);
+use Try::Tiny;
+use Getopt::Long;
 
 use Readonly;
 Readonly::Scalar my $CLIENT_ID
@@ -22,11 +24,13 @@ Readonly::Scalar my $PAGE_IDS   => "$Bin/page_ids.txt";
 use utf8;
 binmode(STDOUT,':utf8');
 
-my $token = $ARGV[0];
+my $options = {};
+parse_args();
+
+my $token = $options->{'token'};
 if ( !defined($token) ) {
     $token = get_token();
 }
-
 print "TOKEN = <$token>\n";
 
 my $page_ids = read_id_list( $PAGE_IDS ) if ( -f $PAGE_IDS );
@@ -216,4 +220,10 @@ sub read_id_list {
     $pages_list->close();
 
     return $pages_ids;
+}
+
+sub parse_args {
+    GetOptions(
+        't=s' => \$options->{'token'},
+    );
 }
