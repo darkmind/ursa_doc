@@ -1,5 +1,11 @@
 language: python
+python:
+  - "3.6"
+addons:
+  apt:
+    update: true
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y python3-sphinx python3-sphinxcontrib.blockdiag python3-sphinxcontrib.seqdiag
-script: make html
+script:
+  - make html
