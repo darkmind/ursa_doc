@@ -38,3 +38,4 @@
   :maxdepth: 2
 
   documentation/Параметры_и_Навыки.rst
+  documentation/Проверки.rst
