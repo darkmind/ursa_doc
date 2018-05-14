@@ -1,57 +1,40 @@
+========================
+Ролевая система U.R.S.A.
+========================
+
+Добро пожаловать на сайт ролевой системы U.R.S.A. "Universal Role-play System Advanced".
+
+**Общее**
+
+  U.R.S.A. "Universal Role-play System Advanced" универсальная ролевая система, для проведения игр по фентези, киберпанк, пост-апокалипсис или любой другой тематике.
+
+**Особенности**
+
+  - Для получения случайных значений используется колода игральных карт в 54 карты.
+
+  - Для всех действий требуется только одна проверка на картах.
+
+  - Значительная часть действий не требует проверок вообще, а если они необходимы то есть правило автоматических успехов.
+
+  - Простая система сражений. Сдесь нет 2-4х бросков кубиков для определения попадания, уклонения, повреждений, поглощения броней - все необходимые значения подставляются в расчеты и в результате игрок тянет одну карту которая определяет успешность действия и степень успеха или неудачи.
+
+  - Персонажи могут играть как обычными людьми, так и выбрав один из нескольких Классов.
+
+  - У каждого Класса свои, уникальные спец-способности, специальный Ресурс и способ его использования/восстановления.
+
+  - Класс никак не ограничивает персонажа.
+
+    *Примеры*
+
+      - Маг с максимальными параметроми Силы, Холодного оружия и Скрытности который любит атаковать своих жертв из тени усиленным магией ударом кувалды.
+
+      - Жрец с прокачанной Алхимией, отравитель который собственноручно говорит яды и подсыпает в еду другим.
+
+      - Воин с максимальным параметром Ловкости который отрицает доспехи т.к. те мешают двигаться и сражается парой кинжалов.
+
+  - Система предоставляет описание вселенной в которой может существовать абсолютно любой существующий мир или игровая вселенная.
+
 .. toctree::
   :maxdepth: 2
 
-  documentation/blog_Дары.rst
-  documentation/blog_Дары_Ассасин.rst
-  documentation/blog_Дары_Монах.rst
-  documentation/blog_Дары_Оборотень.rst
-  documentation/blog_Дары_Общие.rst
-  documentation/blog_Дары_Полководец.rst
-  documentation/blog_Дары_Убийца_магов.rst
-  documentation/blog_Дисциплины.rst
-  documentation/blog_Дисциплины_Адское_пламя.rst
-  documentation/blog_Дисциплины_Алхимия.rst
-  documentation/blog_Дисциплины_Анимализм.rst
-  documentation/blog_Дисциплины_Власть_над_тенью.rst
-  documentation/blog_Дисциплины_Демонизм.rst
-  documentation/blog_Дисциплины_Доминирование.rst
-  documentation/blog_Дисциплины_Затемнение.rst
-  documentation/blog_Дисциплины_Зачарование.rst
-  documentation/blog_Дисциплины_Изменчивость.rst
-  documentation/blog_Дисциплины_Исцеление.rst
-  documentation/blog_Дисциплины_Мельпомения.rst
-  documentation/blog_Дисциплины_Могущество.rst
-  documentation/blog_Дисциплины_Очарование.rst
-  documentation/blog_Дисциплины_Перемещение.rst
-  documentation/blog_Дисциплины_Помешательство.rst
-  documentation/blog_Дисциплины_Превращение.rst
-  documentation/blog_Дисциплины_Прорицание.rst
-  documentation/blog_Дисциплины_Серпентис.rst
-  documentation/blog_Дисциплины_Смертоносность.rst
-  documentation/blog_Дисциплины_Стойкость.rst
-  documentation/blog_Дисциплины_Стремительность.rst
-  documentation/blog_Дисциплины_Танатозис.rst
-  documentation/blog_Дисциплины_Темпорис.rst
-  documentation/blog_Дисциплины_Управление_погодой.rst
-  documentation/blog_Дисциплины_Химерия.rst
-  documentation/blog_Класс_Воин.rst
-  documentation/blog_Класс_Жрец.rst
-  documentation/blog_Класс_Маг.rst
-  documentation/blog_Классы.rst
-  documentation/blog_Приложение.rst
-  documentation/blog_Разработка.rst
-  documentation/blog_Система.rst
-  documentation/blog_Система_генерация_опыт.rst
-  documentation/blog_Система_кубики.rst
-  documentation/blog_Система_общее.rst
-  documentation/blog_Система_Таблицы_вероятности.rst
-  documentation/blog_Сферы.rst
-  documentation/blog_Сферы_Время.rst
-  documentation/blog_Сферы_Дух.rst
-  documentation/blog_Сферы_Жизнь.rst
-  documentation/blog_Сферы_Материя.rst
-  documentation/blog_Сферы_Основы.rst
-  documentation/blog_Сферы_Разум.rst
-  documentation/blog_Сферы_Связь.rst
-  documentation/blog_Сферы_Сила.rst
-  documentation/blog_Сферы_Энтропия.rst
+  documentation/Параметры_и_Навыки.rst
