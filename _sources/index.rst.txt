@@ -24,7 +24,7 @@
 
   - Класс никак не ограничивает персонажа.
 
-    *Примеры*
+    Примеры:
 
       - Маг с максимальными параметроми Силы, Холодного оружия и Скрытности который любит атаковать своих жертв из тени усиленным магией ударом кувалды.
 
@@ -37,5 +37,6 @@
 .. toctree::
   :maxdepth: 2
 
-  documentation/Параметры_и_Навыки.rst
-  documentation/Проверки.rst
+  documentation/System/Attributes_Skills.rst
+  documentation/System/Checks.rst
+  documentation/Fantasy/Classes.rst
