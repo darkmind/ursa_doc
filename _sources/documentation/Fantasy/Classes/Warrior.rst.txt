@@ -23,4 +23,3 @@
 **Классовые способности**
 
   `Воинские Дары.
-  <https://dnd-wod.blogspot.com/p/blog-page_8.html>`_
