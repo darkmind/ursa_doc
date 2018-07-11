@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import sys, os
+import sys
+import os
 
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.todo',
-    'sphinx.ext.viewcode', 'sphinx.ext.extlinks','sphinxcontrib.seqdiag',
-    'sphinxcontrib.blockdiag']
+              'sphinx.ext.viewcode', 'sphinx.ext.extlinks',
+              'sphinxcontrib.seqdiag', 'sphinxcontrib.blockdiag']
 
 todo_include_todos = True
 
@@ -23,7 +24,7 @@ pygments_style = 'sphinx'
 
 html_theme = 'blog'
 
-html_add_permalinks = None
+html_add_permalinks = ''
 
 html_short_title = project
 
