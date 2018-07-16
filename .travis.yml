@@ -2,7 +2,7 @@ language: python
 python:
   - "3.6"
 install:
-  - pip install sphinx sphinxcontrib-blockdiag sphinxcontrib-seqdiag
+  - pip install sphinx sphinxcontrib-blockdiag sphinxcontrib-seqdiag GitPython
 script:
   - make html
 deploy:
@@ -13,3 +13,5 @@ deploy:
   local-dir: _build/html
   on:
     branch: master
+after_deploy:
+  - python ./post_news.py "${Tele}"
