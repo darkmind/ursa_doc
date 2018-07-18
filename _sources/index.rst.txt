@@ -39,4 +39,5 @@
 
   documentation/System/Attributes_Skills.rst
   documentation/System/Checks.rst
+  documentation/System/Fight.rst
   documentation/Fantasy/Classes.rst
