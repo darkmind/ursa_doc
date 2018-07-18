@@ -37,9 +37,6 @@ if len(file_changed) > 0:
     for file_name in file_changed:
         news += file_name + "\n"
 
-print(news)
-exit(0)
-
 method='sendMessage'
 data={ 'chat_id': '-305732799', 'text': news }
 
