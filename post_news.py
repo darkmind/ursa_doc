@@ -10,9 +10,10 @@ _, token = argv
 repo = Repo(getcwd())
 headcommit = repo.head.commit
 
-news = headcommit.author.name + "\n" + \
-    strftime("%a, %d %b %Y %H:%M", gmtime(headcommit.committed_date)) + \
-    "\n" + headcommit.message
+news = "Автор: {0}\n{1}\n{2}\nИзменения: https://github.com/darkmind/ursa_doc/commit/{3}\n".format(
+	headcommit.author.name, strftime("%a, %d %b %Y %H:%M", gmtime(headcommit.committed_date)),
+	headcommit.message, headcommit.hexsha
+)
 
 doc_match = r'^documentation/'
 doc_changed = []
@@ -35,6 +36,9 @@ if len(file_changed) > 0:
     news += "Измененные файлы:\n"
     for file_name in file_changed:
         news += file_name + "\n"
+
+print(news)
+exit(0)
 
 method='sendMessage'
 data={ 'chat_id': '-305732799', 'text': news }
