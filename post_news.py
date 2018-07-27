@@ -1,46 +1,54 @@
-from requests import post
-from sys import argv
-from git import Repo
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 from os import getcwd
 from time import strftime, gmtime
 from re import match
 
-_, token = argv
+from argparse import ArgumentParser
+from requests import post
+from git import Repo
 
-repo = Repo(getcwd())
-headcommit = repo.head.commit
+PARSER = ArgumentParser()
+PARSER.add_argument('token', metavar='<Telegram Token>', type=str)
+ARGS = PARSER.parse_args()
 
-news = "Автор: {0}\n{1}\n{2}\nИзменения: https://github.com/darkmind/ursa_doc/commit/{3}\n".format(
-	headcommit.author.name, strftime("%a, %d %b %Y %H:%M", gmtime(headcommit.committed_date)),
-	headcommit.message, headcommit.hexsha
+TOKEN = ARGS.token
+
+REPO = Repo(getcwd())
+HEADCOMMIT = REPO.head.commit
+
+NEWS = "Автор: {0}\n{1}\n{2}\nИзменения: https://github.com/darkmind/ursa_doc/commit/{3}\n".format(
+    HEADCOMMIT.author.name, strftime("%a, %d %b %Y %H:%M", gmtime(HEADCOMMIT.committed_date)),
+    HEADCOMMIT.message, HEADCOMMIT.hexsha
 )
 
-doc_match = r'^documentation/'
-doc_changed = []
-file_changed = []
+DOC_MATCH = r'^documentation/'
+DOC_CHANGED = []
+FILE_CHANGED = []
 
-changedFiles = [ item.a_path for item in headcommit.diff('HEAD~1') ]
-for file_path in changedFiles:
-    if match( doc_match, file_path ):
+CHANGED_FILES = [item.a_path for item in HEADCOMMIT.diff('HEAD~1')]
+for file_path in CHANGED_FILES:
+    if match(DOC_MATCH, file_path):
         changed_file = 'https://darkmind.github.io/ursa_doc/' + file_path.replace('.rst', '.html')
-        doc_changed.append(changed_file)
+        DOC_CHANGED.append(changed_file)
     else:
-        file_changed.append(file_path)
+        FILE_CHANGED.append(file_path)
 
-if len(doc_changed) > 0:
-    news += "Измененные страницы:\n"
-    for file_name in doc_changed:
-        news += file_name + "\n"
+if DOC_CHANGED:
+    NEWS += "Измененные страницы:\n"
+    for file_name in DOC_CHANGED:
+        NEWS += file_name + "\n"
 
-if len(file_changed) > 0:
-    news += "Измененные файлы:\n"
-    for file_name in file_changed:
-        news += file_name + "\n"
+if FILE_CHANGED:
+    NEWS += "Измененные файлы:\n"
+    for file_name in FILE_CHANGED:
+        NEWS += file_name + "\n"
 
-method='sendMessage'
-data={ 'chat_id': '-305732799', 'text': news }
+METHOD = 'sendMessage'
+DATA = {'chat_id': '-305732799', 'text': NEWS}
 
-response = post(
-    url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-    data=data
+RESPONSE = post(
+    url='https://api.telegram.org/bot{0}/{1}'.format(TOKEN, METHOD),
+    data=DATA
 ).json()
