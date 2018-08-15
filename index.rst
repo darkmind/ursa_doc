@@ -41,3 +41,4 @@
   documentation/System/Checks.rst
   documentation/System/Fight.rst
   documentation/Fantasy/Classes.rst
+  documentation/System/Univers.rst
