@@ -42,3 +42,5 @@
   documentation/System/Fight.rst
   documentation/Fantasy/Classes.rst
   documentation/System/Univers.rst
+  documentation/System/Generation.rst
+  documentation/System/Experience.rst
