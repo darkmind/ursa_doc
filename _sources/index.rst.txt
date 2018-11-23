@@ -40,7 +40,14 @@
   documentation/System/Attributes_Skills.rst
   documentation/System/Checks.rst
   documentation/System/Fight.rst
-  documentation/Fantasy/Classes.rst
   documentation/System/Univers.rst
   documentation/System/Generation.rst
   documentation/System/Experience.rst
+
+**Фентези миры**
+
+.. toctree::
+  :maxdepth: 1
+
+  documentation/Fantasy/Common/Overview.rst
+  documentation/Fantasy/Shadow of god/Overview.rst
