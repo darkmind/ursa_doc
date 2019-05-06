@@ -7,3 +7,4 @@
   :maxdepth: 3
 
   Classes.rst
+  Items.rst
