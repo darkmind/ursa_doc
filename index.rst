@@ -37,12 +37,14 @@
 .. toctree::
   :maxdepth: 2
 
+  documentation/System/Basic.rst
   documentation/System/Attributes_Skills.rst
   documentation/System/Checks.rst
   documentation/System/Fight.rst
   documentation/System/Univers.rst
   documentation/System/Generation.rst
   documentation/System/Experience.rst
+  documentation/System/Cards.rst
 
 **Фентези миры**
 
@@ -50,4 +52,4 @@
   :maxdepth: 1
 
   documentation/Fantasy/Common/Overview.rst
-  documentation/Fantasy/Shadow of god/Overview.rst
+  documentation/Fantasy/Shadow_of_God/Overview.rst
