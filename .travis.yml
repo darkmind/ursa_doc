@@ -2,15 +2,12 @@ language: python
 python:
   - "3.6"
 install:
-  - pip install sphinx sphinxcontrib-blockdiag sphinxcontrib-seqdiag GitPython
-script:
-  - make html
+  - pip install GitPython
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
-  local-dir: _build/html
   on:
     branch: master
 after_deploy:

@@ -1,19 +1,12 @@
 # Documentation for U.R.S.A. (Universal Role-play System Advanced)
 
-HTML pages of U.R.S.A. rules which are generated from rst files by sphinx.
+HTML pages of U.R.S.A. rules which are generated from md files by Jekyll.
 
 ## Structure
 
-_templates/blog/ - HTML templates
-
-documentation/ - rst files of U.R.S.A.
-
-Generated HTML files are placed to _build/html directory.
 
 ## Requrements
-make python3-sphinx python3-sphinxcontrib.blockdiag python3-sphinxcontrib.seqdiag
+ruby-full build-essential zlib1g-dev
 
-## Building
-$ make clean
-
-$ make
+## Building locally
+$ bundle exec jekyll serve

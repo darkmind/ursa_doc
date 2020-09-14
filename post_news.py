@@ -23,14 +23,15 @@ NEWS = "Автор: {0}\n{1}\n{2}\nИзменения: https://github.com/darkmi
     HEADCOMMIT.message, HEADCOMMIT.hexsha
 )
 
-DOC_MATCH = r'^documentation/'
+SYS_MATCH = r'^system/'
+FAN_MATCH = r'^fantasy/'
 DOC_CHANGED = []
 FILE_CHANGED = []
 
 CHANGED_FILES = [item.a_path for item in HEADCOMMIT.diff('HEAD~1')]
 for file_path in CHANGED_FILES:
-    if match(DOC_MATCH, file_path):
-        changed_file = 'https://darkmind.github.io/ursa_doc/' + file_path.replace('.rst', '.html')
+    if match(SYS_MATCH, file_path) or match(FAN_MATCH, file_path):
+        changed_file = 'https://darkmind.github.io/ursa_doc/' + file_path.replace('.md', '.html')
         DOC_CHANGED.append(changed_file)
     else:
         FILE_CHANGED.append(file_path)
