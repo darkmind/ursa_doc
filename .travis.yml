@@ -1,14 +1,15 @@
-language: python
-python:
-  - "3.6"
-install:
-  - pip install GitPython
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
-after_deploy:
-  - python ./post_news.py "${Tele}"
+language: ruby
+rvm:
+  - 2.7
+install: gem install jekyll html-proofer
+script: jekyll build && htmlproofer ./_site
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+cache: bundler
+notifications:
+  email: false
