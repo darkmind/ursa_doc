@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>U.R.S.A. генератор персонажа</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link href="/ursa_doc/css/navbar.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/ursa_doc/navbar.html");
+  });
+</script>
+
+<div class="container-fluid">
+
+  <h2 class="my-0 font-weight-normal text-center">Параметры: $X</h1>
+
+  <div class="card-deck mb-4 text-center">
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Физические</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-xs">-</button>Сила: $X<button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-xs">-</button>Ловкость: $X<button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Социальные</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+            Красота: $X
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+            Харизма: $X
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ментальные</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+            Интеллект: $X
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+            Сообразительность: $X
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="my-0 font-weight-normal text-center">Навыки: $X</h1>
+
+  <div class="card-deck mb-4 text-center">
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Силы</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Рукопашный бой: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Атлетизм: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Выживание: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Запугивание: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Ловкости</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Холодное оружие: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Скрытность: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Безопасность: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Стрельба: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Ремесло: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Красоты</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Лидерство: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Этикет: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Соблазнение: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Харизмы</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Обман: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Убеждение: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Приручение: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Интеллекта</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Логика: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Первая помощь: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Науки: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Сапер: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Сообразительности</h4>
+      </div>
+      <div class="card-body">
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Политика: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Расследования: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Вождение: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">-</button>
+          </div>
+          <div class="col-md-8">
+            Знание улиц: $X
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-primary btn-xs">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+ <h2 class="my-0 font-weight-normal text-left">Здоровье: 52</h1>
+ <h2 class="my-0 font-weight-normal text-left">Сила Воли: $X</h1>
+ <h2 class="my-0 font-weight-normal text-left">Защита: $X</h1>
+</div>
+</body>
+</html>
