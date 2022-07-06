@@ -2,3 +2,4 @@ _site/
 vendor/
 .gitconfig
 documentation/Fantasy/Shadow_of_God/modules
+.bundle/
