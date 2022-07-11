@@ -1,7 +1,7 @@
 ---
 layout: ursa
 lang: ua-UA
-title: U.R.S.A. Параметры и Навыки
+title: U.R.S.A. Параметри і Навички
 ---
 
 <div id="nav-placeholder"></div>
