@@ -1,7 +1,7 @@
 ---
 layout: ursa
 lang: ua-UA
-title: U.R.S.A. Значення карт
+title: U.R.S.A. Числове значення карт
 ---
 
 <div id="nav-placeholder"></div>
