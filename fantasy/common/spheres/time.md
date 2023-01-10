@@ -1,6 +1,6 @@
 ---
 layout: ursa
-lang: ru-RU
+lang: ua-UA
 title: U.R.S.A. Магічні Сфери - Час
 ---
 
