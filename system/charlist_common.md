@@ -43,7 +43,7 @@ $(function(){
   <th>Спритності</th>
   <th>Краси</th>
   <th>Харизми</th>
-  <th>Інтелекта</th>
+  <th>Інтелекту</th>
   <th>Кмітливості</th>
  </tr> 
  <tr>
@@ -57,7 +57,7 @@ $(function(){
  <tr>
   <td>Атлетизм<div style="float:right">[  ]</div></td>
   <td>Непомітність<div style="float:right">[  ]</div></td>
-  <td>Этикет<div style="float:right">[  ]</div></td>
+  <td>Етикет<div style="float:right">[  ]</div></td>
   <td>Переконання <div style="float:right">[  ]</div></td>
   <td>Перша допомога <div style="float:right">[  ]</div></td>
   <td>Розслідування<div style="float:right">[  ]</div></td>
